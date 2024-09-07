@@ -53,8 +53,7 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
         }
         
         let deleteItem = UIAction(title: "Delete", image: UIImage(systemName: "trash")) { [weak self] _ in
-            self?.listImages.remove(at: indexPath.row)
-            self?.tableView.deleteRows(at: [indexPath], with: .fade)
+            self?.confirmDeleteItem(at: indexPath)
         }
         deleteItem.attributes = .destructive
             
@@ -108,6 +107,21 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
 
     
     // Alerts
+    func confirmDeleteItem(at indexPath: IndexPath){
+        let alert = UIAlertController(title: "Delete Item", message: "Be sure to delete", preferredStyle: .actionSheet)
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        let deleteAction = UIAlertAction(title: "Delete", style: .default) { [weak self] _ in
+            self?.listImages.remove(at: indexPath.row)
+            self?.tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+        
+        deleteAction.setValue(UIColor.red, forKey: "titleTextColor")
+        
+        alert.addAction(deleteAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true)
+    }
 
 }
 
