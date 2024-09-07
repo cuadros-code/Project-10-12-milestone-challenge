@@ -11,12 +11,12 @@ class FileModel: NSObject, Codable {
 
     var title: String
     var subtitle: String
-    var image: String
+    var imageID: String
     
-    init(title: String, subtitle: String, image: String) {
+    init(title: String, subtitle: String, imageID: String) {
         self.title = title
         self.subtitle = subtitle
-        self.image = image
+        self.imageID = imageID
     }
     
 }

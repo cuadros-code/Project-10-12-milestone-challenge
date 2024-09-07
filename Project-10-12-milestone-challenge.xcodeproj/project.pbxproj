@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B500EA72C8BB1A100423C1E /* DetailImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B500EA62C8BB1A100423C1E /* DetailImageViewController.swift */; };
 		1BCDA3612C8A8AFE00F37725 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDA3602C8A8AFE00F37725 /* AppDelegate.swift */; };
 		1BCDA3632C8A8AFE00F37725 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDA3622C8A8AFE00F37725 /* SceneDelegate.swift */; };
 		1BCDA3652C8A8AFE00F37725 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BCDA3642C8A8AFE00F37725 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B500EA62C8BB1A100423C1E /* DetailImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailImageViewController.swift; sourceTree = "<group>"; };
 		1BCDA35D2C8A8AFE00F37725 /* Project-10-12-milestone-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Project-10-12-milestone-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BCDA3602C8A8AFE00F37725 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1BCDA3622C8A8AFE00F37725 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				1BCDA3692C8A8AFF00F37725 /* Assets.xcassets */,
 				1BCDA36B2C8A8AFF00F37725 /* LaunchScreen.storyboard */,
 				1BCDA36E2C8A8AFF00F37725 /* Info.plist */,
+				1B500EA62C8BB1A100423C1E /* DetailImageViewController.swift */,
 			);
 			path = "Project-10-12-milestone-challenge";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				1BCDA3612C8A8AFE00F37725 /* AppDelegate.swift in Sources */,
 				1BCDA3632C8A8AFE00F37725 /* SceneDelegate.swift in Sources */,
 				1BCDA3752C8A8E2600F37725 /* FileModel.swift in Sources */,
+				1B500EA72C8BB1A100423C1E /* DetailImageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
