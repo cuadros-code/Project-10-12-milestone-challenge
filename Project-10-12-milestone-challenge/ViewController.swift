@@ -40,6 +40,7 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
         
     }
     
+    
     // Table Actions
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listImages.count
@@ -83,6 +84,7 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let detailController = storyboard?.instantiateViewController(withIdentifier: "ImageDetail") as? DetailImageViewController {
             let selectedItem = listImages[indexPath.row]
+            detailController.titleImage = selectedItem.title
             detailController.imagePath = getDocumentDirectory().appendingPathComponent(selectedItem.imageID)
             navigationController?.pushViewController(detailController, animated: true)
         }

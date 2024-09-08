@@ -10,9 +10,11 @@ import UIKit
 class DetailImageViewController: UIViewController {
     @IBOutlet var image: UIImageView!
     var imagePath: URL!
+    var titleImage: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = titleImage
         image.image = UIImage(contentsOfFile: imagePath.path)
     }
     

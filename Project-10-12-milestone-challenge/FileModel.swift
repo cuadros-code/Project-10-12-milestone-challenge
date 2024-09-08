@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import MobileCoreServices
 
 class FileModel: NSObject, Codable {
-
+    
     var title: String
     var subtitle: String
     var imageID: String
