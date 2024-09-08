@@ -95,7 +95,7 @@ class ViewController: UITableViewController, UIImagePickerControllerDelegate, UI
     @objc func takePhoto(){
         let pickerImage = UIImagePickerController()
         pickerImage.delegate = self
-        pickerImage.sourceType = .camera
+        pickerImage.sourceType = .photoLibrary
         present(pickerImage, animated: true)
     }
     
